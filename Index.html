@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cautela de Material</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cautela de Material</h1>
+        <form id="cautelaForm">
+            <label for="nomePessoa">Nome da Pessoa:</label>
+            <input type="text" id="nomePessoa" name="nomePessoa" required>
+
+            <label for="nomeMaterial">Nome do Material:</label>
+            <input type="text" id="nomeMaterial" name="nomeMaterial" required>
+
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" id="quantidade" name="quantidade" required>
+
+            <label for="dataCautela">Data da Cautela:</label>
+            <input type="date" id="dataCautela" name="dataCautela" required>
+
+            <button type="submit">Salvar</button>
+        </form>
+
+        <h2>Lista de Cautelas</h2>
+        <div class="actions">
+            <button id="imprimirBtn">Imprimir Lista</button>
+        </div>
+        <table id="cautelaTable">
+            <thead>
+                <tr>
+                    <th>Nome da Pessoa</th>
+                    <th>Nome do Material</th>
+                    <th>Quantidade</th>
+                    <th>Data da Cautela</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- As linhas serão adicionadas aqui -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
